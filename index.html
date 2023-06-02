@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion de usuarios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Estudiantes</h1>
+    </header>
+    <main>
+        <section id="registrar">
+            <button >Resgistrar usuario</button>
+        </section>
+        <section>
+            <table id="estudiantesTb">
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Johan</td>
+                        <td>jmfonseca</td>
+                        <td>
+                            <button id="modificar">Modificar</button>
+                        </td>
+                        <td>
+                            <button name="eliminar"id="eliminar">Eliminar</button>
+                        </td>
+                        <td>
+                            <button name= "notas" id="notas">Notas</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Programacion avanzada</p>
+        <br>
+        <p>@2023</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="js/gestionEstudiantes.js"></script>
+</body>
+
+</html>
