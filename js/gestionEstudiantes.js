@@ -16,7 +16,8 @@ $(document).ready(function () {
             const estudiantes = dataJson.data;
             const table = document.getElementById('estudiantesTb');
             const tbody = table.getElementsByTagName('tbody')[0];
-            let html = '';
+            let html = ''; 
+            let cont = '';
             estudiantes.forEach(estudiantes => {
                 html += '<tr>';
                 html += '   <td>' + estudiantes.codigo + '</td>';
@@ -31,8 +32,12 @@ $(document).ready(function () {
                 html += '<a href="actividades.html?codigo='+estudiantes.codigo+'" >Notas</a>'
                 html += '</td>'
                 html += '</tr>';
+                cont += estudiantes.codigo;
             });
-            tbody.innerHTML = html;
+            tbody.innerHTML = html
+            if(cont==''){
+                $("#alert").html('No se han ingresado estudiantes')
+            }
         }).fail((error) => {
             console.error(error);
         });
