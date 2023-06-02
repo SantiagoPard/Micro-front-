@@ -29,7 +29,7 @@ $(document).ready(function () {
                 html += '   <td>' + actividades.descripcion + '</td>';
                 html += '   <td>' + actividades.nota + '</td>';
                 html += '<td>';
-                html += ' <a href="html/modificarEstudiante.html?codigo=' + actividades.id + '" >Modificar</a>';
+                html += ' <a href="html/modificarActividad.html?id=' + actividades.id + '&codigo='+estudiante.codigo+'" >Modificar</a>';
                 html += '</td>';
                 html += '<td>';
                 html += '<button type="button" onclick="eliminarActividad(' + actividades.id + ')">Eliminar</button>';

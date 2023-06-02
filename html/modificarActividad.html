@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Registro</title>
+  </head>
+  <body>
+    <section>
+        <h1 id="titulo"></h1>
+        <form>
+            <label>
+                <span>Descripcion: </span>
+                <input  type="text" maxlength="200" id ="descripcion" name="descripcion" required>
+            </label>
+            <br>
+            <label>
+                <span>Nota: </span>
+                <input type="text" name="nota" id="nota" maxlength="150" required>
+            </label>
+            <br>
+            <label>
+                <button type="button" id="guardarAct" name="guardar">Guardar</button>
+            </label>
+            <a id="volverAct">volver al inicio</a>
+        </form>
+      </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/modificarActividad.js"></script>
+  </body>
+</html>
