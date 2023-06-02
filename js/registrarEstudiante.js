@@ -1,7 +1,7 @@
 /**
  * Funcianalidad para registrar un usuario
  */
-
+$("#titulo").html('Registrar Estudiante');
 $("#guardar").click(function () {
   $codigo = $("#codigo").val();
   $nombres = $("#nombres").val();

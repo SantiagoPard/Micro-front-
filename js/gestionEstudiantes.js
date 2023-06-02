@@ -28,7 +28,7 @@ $(document).ready(function () {
                 html += '<button onclick="eliminarEstudiante(' + estudiantes.codigo + ')">Eliminar</button>';
                 html += '</td>';
                 html += '<td>'
-                html += '<a href="html/actividades.html?codigo='+estudiantes.codigo+'" >Notas</a>'
+                html += '<a href="actividades.html?codigo='+estudiantes.codigo+'" >Notas</a>'
                 html += '</td>'
                 html += '</tr>';
             });

@@ -17,6 +17,7 @@ $(document).ready(function () {
             const table = document.getElementById('actividadesTb');
             const tbody = table.getElementsByTagName('tbody')[0];
             const h1 = document.getElementById('code');
+            const a = document.getElementById('registrarActividad');
             let html = '';
             let cont = 1;
             let codigo = 'Estudiante: ' + estudiante.codigo;
@@ -38,6 +39,7 @@ $(document).ready(function () {
             });
             tbody.innerHTML = html;
             h1.innerHTML = codigo;
+            a.setAttribute('href','../html/registrarActividad.html?codigo='+estudiante.codigo);
         }).fail((error) => {
             console.error(error);
         });
