@@ -4,8 +4,10 @@ let eliminarEstudiante = () => { };
 let reload = () => { };
 
 $(document).ready(function () {
-
+    
     if (window.location.href == 'http://127.0.0.1:5500/index.html') {
+    actualizarT();
+    function actualizarT(){
         $.ajax({
             method: 'get',
             url: 'http://localhost:8000/estudiantes'
@@ -35,6 +37,7 @@ $(document).ready(function () {
             console.error(error);
         });
     }
+    }
 
     /**
     * Funcianalidad para eliminar un usuario
@@ -49,28 +52,9 @@ $(document).ready(function () {
             const dataJson = JSON.parse(response);
             const msg = dataJson.data;
             alert(msg);
-        
+            actualizarT();
         });
     }
 
 
-
-
-    // // $.ajax({
-    // //     url: 'http://localhost:8000/estudiantes/7',
-    // //     method: 'delete'
-    // // }).done(response => {
-    // //     const dataJson = JSON.parse(response);
-    // //     const msg = dataJson.data;
-    // //     alert(msg);
-    // // });
-
-    // // $.ajax({
-    // //     url: 'http://localhost:8000/estudiantes',
-    // //     method: 'get'
-    // // }).done(response => {
-    // //     const dataJson = JSON.parse(response);
-    // //     const msg = dataJson.data;
-    // //     console.log(msg);
-    // // });
 })
