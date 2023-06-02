@@ -1,6 +1,7 @@
 /**
  * Funcianalidad para registrar un usuario
  */
+
 $("#guardar").click(function () {
   $codigo = $("#codigo").val();
   $nombres = $("#nombres").val();
