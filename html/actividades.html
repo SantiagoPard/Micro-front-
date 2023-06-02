@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestion de usuarios</title>
+</head>
+
+<body>
+    <header>
+        <h1>Actividades</h1>
+    </header>
+    <main>
+        <section id="registrar">
+            <a href="html/registrarEstudiante.html">Resgistrar usuario</a>
+        </section>
+        <section>
+            <table id="actividadesTb">
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Descripcion</th>
+                        <th>nota</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Johan</td>
+                        <td>jmfonseca</td>
+                        <td></td>
+                        <td>
+                            <a href="html/modificarEstudiante.html" id="modificar">Modificar</a>
+                        </td>
+                        <td>
+                            <button name="eliminar"id="eliminar">Eliminar</button>
+                        </td>
+                        <td>
+                            <button name= "notas" id="notas">Notas</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Programacion avanzada</p>
+        <br>
+        <p>@2023</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../js/gestionNotas.js"></script>
+</body>
+
+</html>
