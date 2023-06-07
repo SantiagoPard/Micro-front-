@@ -1,0 +1,30 @@
+
+a{
+    text-decoration-line: none;
+    text-decoration-color:none;
+    color: black;
+    background-color: aliceblue;
+    transition: background-color .5s;
+}
+th,td,table{
+    border: solid;
+    border-collapse: collapse;
+}
+button{
+    background-color:none;
+    border: 0;
+    background-color: aliceblue;
+    transition: background-color .5s;
+    cursor: pointer;
+}
+#registrar{
+    border-style: solid;
+    border-color:black;
+    display: inline-block;
+    text-decoration-line: none;
+    text-decoration-color:none;
+}
+
+a:hover,button:hover{
+    background-color:antiquewhite;
+}

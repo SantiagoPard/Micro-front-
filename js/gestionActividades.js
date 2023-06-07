@@ -1,6 +1,5 @@
 let url = new URLSearchParams(window.location.search);
 let codigoEst = url.get("codigo");
-console.log(codigoEst)
 
 let eliminarActividad = () => { };
 

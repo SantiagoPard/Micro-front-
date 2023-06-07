@@ -26,7 +26,7 @@ $(document).ready(function () {
                 html += ' <a href="html/modificarEstudiante.html?codigo='+estudiantes.codigo+'" >Modificar</a>';
                 html += '</td>';
                 html += '<td>';
-                html += '<button onclick="eliminarEstudiante(' + estudiantes.codigo + ')">Eliminar</button>';
+                html += '<button onclick="eliminarEstudiante('+estudiantes.codigo+')">Eliminar</button>';
                 html += '</td>';
                 html += '<td>'
                 html += '<a href="actividades.html?codigo='+estudiantes.codigo+'" >Notas</a>'

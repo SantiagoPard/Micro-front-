@@ -7,7 +7,7 @@ $("#guardar").click(function () {
     $descripcion = $("#descripcion").val();
     $nota = $("#nota").val();
     $codigo = $("#codigoEstudiante").val();
-   
+  
     $.ajax({
       url: "http://localhost:8000/actividades",
       method: "post",
@@ -20,5 +20,7 @@ $("#guardar").click(function () {
       const dataJson = JSON.parse(response);
       const msg = dataJson.data;
       alert(msg);
+      location.href ='../actividades.html?codigo='+codigoEst;
     });
+  
   });

@@ -30,5 +30,6 @@ $("#guardarMod").click(function () {
         const dataJson = JSON.parse(response);
         const msg = dataJson.data;
         alert(msg);
+        location.href ='../index.html';
     });
 });
